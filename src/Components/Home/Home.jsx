@@ -42,6 +42,7 @@ setProducts(data.data)
   
   
   <div className='container '>
+
     <MainSlider/>
     <CategoriesSlider/>
     <div className='row'>

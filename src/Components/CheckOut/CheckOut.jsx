@@ -15,7 +15,7 @@ fetchCheckOut(shippingAddress)
 
 
    async function fetchCheckOut(shippingAddress){
-        let res= await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}?url=http://localhost:3001`,shippingAddress
+        let res= await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}?url=https://abdullrhmanjamal.github.io/fresh-cart2/#/`,shippingAddress
        ,{
             headers:{
                 token:localStorage.getItem('token')

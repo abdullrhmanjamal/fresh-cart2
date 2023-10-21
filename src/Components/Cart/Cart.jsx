@@ -26,7 +26,6 @@ useEffect(()=>{
     }
 
   }
-
   
   )
   console.log(data)
@@ -41,8 +40,8 @@ useEffect(()=>{
     headers:{
       token:localStorage.getItem('token')
     }
-  }).catch((err)=>{
-console.log(err.response.data.message)
+  }).catch((error)=>{
+    console.log('error',error)
   })
 
   console.log(data)
@@ -51,6 +50,7 @@ console.log(err.response.data.message)
   setCartProducts(data.data.products)
   setCartCount(data.numOfCartItems)
 
+  
 
  }
  
@@ -68,7 +68,7 @@ console.log(err.response.data.message)
   console.log(data)
   
 
-  if(data.status ==  'success'){
+  if(data.status ===  'success'){
     toast.success(data.message)
   }
  }
